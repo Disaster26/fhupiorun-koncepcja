@@ -1,0 +1,270 @@
+@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/barlow-latin-ext-400.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/barlow-latin-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/barlow-latin-ext-500.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/barlow-latin-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/barlow-latin-ext-600.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/barlow-latin-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/barlow-condensed-latin-ext-600.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/barlow-condensed-latin-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/barlow-condensed-latin-ext-700.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/barlow-condensed-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+:root{
+  --niebieski:#2692FF; --gleboki:#0075EA; --jasny1:#82C0FF; --jasny2:#66B3FF;
+  --granat:#0A1A2E; --granat2:#102742; --tekst:#14202E; --szary-t:#4A5868;
+  --tlo:#FFFFFF; --szary:#EEF2F6; --linia:#D6DEE8;
+  --hh:72px; --k:28px;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hh) + 8px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--tlo);color:var(--tekst);font:400 17px/1.6 'Barlow',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--gleboki)}
+h1,h2,h3{font-family:'Barlow Condensed','Barlow',sans-serif;font-weight:700;line-height:1.05;margin:0;color:inherit;letter-spacing:0}
+h2{font-size:clamp(34px,4.2vw,52px);margin-bottom:18px}
+h3{font-size:24px;font-weight:600;line-height:1.15}
+p{margin:0 0 14px}
+.wrap{width:min(var(--wrap),100% - 32px);margin-inline:auto}
+@media (min-width:700px){.wrap{width:min(var(--wrap),100% - 64px)}}
+
+/* przycisk: prostokat z dwoma kwadratami ze znaku */
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--niebieski);color:#06142A;font:600 18px/1 'Barlow',sans-serif;text-decoration:none;padding:17px 22px 17px 24px;border:0;border-radius:2px;cursor:pointer;transition:background .2s}
+.btn::after{content:"";width:16px;height:16px;flex:none;background:
+  linear-gradient(currentColor,currentColor) 8px 0/8px 8px no-repeat,
+  linear-gradient(currentColor,currentColor) 0 8px/8px 8px no-repeat;transition:transform .2s}
+.btn:hover{background:#4AA5FF}
+.btn:hover::after{transform:translate(3px,-3px)}
+.btn:focus-visible{outline:3px solid var(--jasny1);outline-offset:3px}
+.btn-jasny{background:var(--granat);color:#fff}
+.btn-jasny:hover{background:var(--gleboki)}
+
+/* NAGLOWEK */
+.top{position:sticky;top:0;z-index:50;background:#fff;height:var(--hh);border-bottom:1px solid var(--linia)}
+.top-in{height:100%;display:flex;align-items:center;gap:28px;width:min(1320px,100% - 32px);margin-inline:auto}
+.logo{display:inline-flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.logo-znak{width:27px;height:36px}
+.logo-txt{font:700 31px/1 'Barlow Condensed',sans-serif;letter-spacing:.01em}
+.logo-fhu{color:var(--granat);margin-right:2px}
+.logo-piorun{color:var(--niebieski)}
+.menu{display:flex;gap:30px;margin-left:auto}
+.menu a{color:var(--tekst);text-decoration:none;font-weight:500;font-size:17px;padding:6px 0;position:relative}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;width:8px;height:8px;background:var(--niebieski);opacity:0;transition:opacity .2s,transform .2s;transform:translateY(4px)}
+.menu a:hover::after,.menu a.akt::after{opacity:1;transform:none}
+.menu a.akt{color:var(--gleboki)}
+.top-tel{display:flex;flex-direction:column;align-items:flex-end;text-decoration:none;line-height:1.1;padding-left:26px;border-left:1px solid var(--linia)}
+.top-tel-opis{font-size:13px;color:var(--szary-t)}
+.top-tel-nr{font:700 23px/1.05 'Barlow Condensed',sans-serif;color:var(--granat)}
+.burger{display:none}
+
+/* PIERWSZY EKRAN */
+.hero{position:relative;background:var(--granat);color:#fff;min-height:calc(100svh - var(--hh));display:flex;align-items:center;overflow:hidden;isolation:isolate}
+.hero-foto{position:absolute;left:0;top:0;bottom:0;height:100%;aspect-ratio:1600/1152;max-width:80%;z-index:-2;margin:0}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:left 60%;
+  -webkit-mask-image:linear-gradient(90deg,#000 66%,transparent 99%);mask-image:linear-gradient(90deg,#000 66%,transparent 99%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(270deg,rgba(10,26,46,.96) 0,rgba(10,26,46,.88) 34%,rgba(10,26,46,.35) 52%,rgba(10,26,46,0) 64%),
+             linear-gradient(0deg,rgba(10,26,46,.55),rgba(10,26,46,0) 30%)}
+.hero-in{position:relative;width:min(600px,46%);margin-left:auto;margin-right:max(32px,calc((100vw - 1260px)/2));padding:56px 0 72px}
+.hero h1{font-size:clamp(44px,4.6vw,76px);line-height:1;margin-bottom:24px;text-wrap:balance}
+.hero .lead{font-size:clamp(18px,1.35vw,21px);line-height:1.55;color:#D5E3F2;margin-bottom:32px;max-width:34em}
+
+/* schodek z kwadratow na granicy sekcji (motyw ze znaku) */
+.schodek{position:absolute;right:max(16px,calc((100vw - var(--wrap))/2));top:calc(var(--k) * -2);width:calc(var(--k)*3);height:calc(var(--k)*2);pointer-events:none;z-index:2;
+  --t:#fff;
+  background:
+   linear-gradient(var(--niebieski),var(--niebieski)) calc(var(--k)*2) 0/var(--k) var(--k) no-repeat,
+   linear-gradient(var(--t),var(--t)) var(--k) var(--k)/var(--k) var(--k) no-repeat,
+   linear-gradient(var(--t),var(--t)) 0 var(--k)/var(--k) var(--k) no-repeat,
+   linear-gradient(var(--t),var(--t)) calc(var(--k)*2) var(--k)/var(--k) var(--k) no-repeat}
+.hero .schodek{top:auto;bottom:0}
+.schodek-szary{--t:var(--szary)}
+.schodek-bialy{--t:#fff}
+
+/* SEKCJE */
+.sec{position:relative;padding:clamp(72px,9vw,120px) 0}
+.szary{background:var(--szary)}
+.sec-lead{font-size:19px;color:var(--szary-t);max-width:44em;margin-bottom:36px}
+
+.firma-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,6vw,88px);align-items:center}
+.firma-txt .duzy{font-size:clamp(20px,1.7vw,24px);line-height:1.45;font-weight:500}
+.firma-txt p{color:var(--szary-t);max-width:38em}
+.firma-txt p.duzy{color:var(--tekst)}
+.firma-foto{margin:0;position:relative;isolation:isolate}
+.firma-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:62% 50%}
+.firma-foto::before{content:"";position:absolute;left:-14px;bottom:-14px;width:56px;height:56px;z-index:-1;
+  background:linear-gradient(var(--jasny2),var(--jasny2)) 0 28px/28px 28px no-repeat,linear-gradient(var(--niebieski),var(--niebieski)) 28px 28px/28px 28px no-repeat,linear-gradient(var(--gleboki),var(--gleboki)) 0 0/28px 28px no-repeat}
+
+/* TABOR */
+.tabor-in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
+.tabor-txt>p{color:var(--szary-t);margin-bottom:24px}
+.parametry{margin:0;border-top:1px solid var(--linia)}
+.parametry div{display:grid;grid-template-columns:minmax(0,11em) minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--linia)}
+.parametry dt{font-weight:600;color:var(--tekst);position:relative;padding-left:18px}
+.parametry dt::before{content:"";position:absolute;left:0;top:.5em;width:8px;height:8px;background:var(--niebieski)}
+.parametry dd{margin:0;color:var(--szary-t)}
+
+.galeria{position:relative;user-select:none}
+.gal-tor{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;outline:none;background:var(--granat);overscroll-behavior-x:contain}
+.gal-tor::-webkit-scrollbar{display:none}
+.gal-tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.gal-tor figure{flex:0 0 100%;margin:0;scroll-snap-align:start}
+.gal-tor img{width:100%;aspect-ratio:4/3;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.gal-str{position:absolute;top:50%;width:48px;height:48px;margin-top:-24px;border:0;border-radius:0;background:rgba(255,255,255,.94);cursor:pointer;opacity:0;transition:opacity .2s}
+.galeria:hover .gal-str,.gal-str:focus-visible{opacity:1}
+.gal-str::before{content:"";position:absolute;inset:0;margin:auto;width:14px;height:21px;background:
+  linear-gradient(var(--granat),var(--granat)) 7px 0/7px 7px no-repeat,
+  linear-gradient(var(--granat),var(--granat)) 0 7px/7px 7px no-repeat,
+  linear-gradient(var(--granat),var(--granat)) 7px 14px/7px 7px no-repeat}
+.gal-prev{left:0}.gal-next{right:0}
+.gal-next::before{transform:scaleX(-1)}
+.gal-licz{position:absolute;right:0;bottom:0;background:var(--granat);color:#fff;font:600 15px/1 'Barlow',sans-serif;padding:10px 14px}
+
+/* KIERUNKI */
+.kier-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.kier-txt>p{color:var(--szary-t);max-width:34em}
+.kraje{list-style:none;padding:0;margin:22px 0 32px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 18px}
+.kraje li{position:relative;padding-left:18px;font-weight:500}
+.kraje li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;background:var(--niebieski)}
+.mapa{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;max-width:380px;width:100%;justify-self:end}
+.k{grid-column:var(--c);grid-row:var(--r);aspect-ratio:1;background:#E3E9F0;display:flex;align-items:center;justify-content:center;font:700 clamp(15px,1.5vw,21px)/1 'Barlow Condensed',sans-serif;color:#fff;position:relative}
+.k.t{background:var(--niebieski)}
+.k.j{background:var(--jasny2)}
+.k.pl{background:var(--gleboki);flex-direction:column;gap:4px}
+.k.pl i{font:500 12px/1 'Barlow',sans-serif;font-style:normal;opacity:.9}
+
+/* DOKUMENTY */
+.arkusze{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.arkusz{position:relative;background:#fff;padding:26px 22px 24px;min-height:220px;display:flex;flex-direction:column;text-decoration:none;color:var(--tekst);border:1px solid var(--linia)}
+.arkusz::before{content:"";position:absolute;right:0;top:0;width:28px;height:28px;background:
+  linear-gradient(var(--niebieski),var(--niebieski)) 14px 0/14px 14px no-repeat,
+  linear-gradient(var(--jasny1),var(--jasny1)) 0 14px/14px 14px no-repeat}
+.arkusz h3{font-size:23px;margin:0 22px 12px 0}
+.arkusz p{font-size:16px;color:var(--szary-t);margin:0}
+.arkusz-link{background:var(--granat);color:#fff;border-color:var(--granat);transition:background .2s}
+.arkusz-link p{color:#C9D7E6}
+.arkusz-link:hover{background:var(--granat2)}
+.arkusz-dalej{margin-top:auto;padding-top:18px;font-weight:600;color:#8CC6FF}
+
+/* KONTAKT */
+.kontakt-in{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(32px,6vw,88px)}
+.zapytanie>p{color:var(--szary-t)}
+.form{margin-top:24px;display:grid;gap:16px}
+.pola2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.form label{display:grid;gap:6px;font-size:15px;font-weight:600;color:var(--tekst);min-width:0}
+.form input,.form textarea{font:400 17px/1.4 'Barlow',sans-serif;color:var(--tekst);background:#fff;border:1px solid #B9C6D4;border-radius:2px;padding:13px 14px;width:100%;min-width:0}
+.form input:focus,.form textarea:focus{outline:2px solid var(--niebieski);outline-offset:0;border-color:var(--niebieski)}
+.form .btn{justify-self:start;margin-top:6px}
+.form-info{background:var(--szary);border-left:8px solid var(--niebieski);padding:12px 16px;color:var(--tekst);margin:0}
+.dane{background:var(--szary);padding:clamp(24px,3vw,40px);align-self:start}
+.dane h3{font-size:28px;margin-bottom:12px}
+.adres{color:var(--szary-t)}
+.kontakty{list-style:none;padding:0;margin:20px 0 24px;border-top:1px solid var(--linia)}
+.kontakty li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid var(--linia)}
+.kontakty span{color:var(--szary-t);font-size:15px}
+.kontakty a{font:700 22px/1.1 'Barlow Condensed',sans-serif;color:var(--granat);text-decoration:none}
+.kontakty a:hover{color:var(--gleboki)}
+.mapka{aspect-ratio:4/3;background:#DDE4EC}
+.mapka iframe{width:100%;height:100%;border:0;display:block}
+
+/* STOPKA */
+.stopka{background:var(--granat);color:#AFC0D3;padding:56px 0 28px;font-size:15px}
+.stopka a{color:#fff;text-decoration:none}
+.stopka a:hover{text-decoration:underline}
+.stopka-in{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);gap:28px 32px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.12)}
+.logo-st .logo-fhu{color:#fff}
+.logo-st{margin-bottom:16px}
+.st-tyt{color:#fff;font-weight:600;margin-bottom:8px}
+.stopka-dol{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;justify-content:space-between;padding-top:22px}
+.st-foto{font-size:13px;opacity:.75}
+.stopka .wylinka-badge{color:#AFC0D3}
+
+.mob{display:none}
+
+@media (max-width:1180px){
+  .menu{gap:22px}
+  .arkusze{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:1040px){
+  .top-tel{padding-left:18px}
+  .menu{gap:18px}
+  .menu a{font-size:16px}
+}
+
+/* TELEFON / TABLET */
+@media (max-width:899px){
+  :root{--hh:62px;--k:20px}
+  body{font-size:16.5px}
+  .top-in{gap:12px}
+  .logo-znak{width:22px;height:29px}
+  .logo-txt{font-size:26px}
+  .burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;border:0;background:var(--granat);padding:0 12px;cursor:pointer;border-radius:2px;flex:none}
+  .burger span{display:block;height:2px;background:#fff;transition:transform .2s,opacity .2s}
+  .burger[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger[aria-expanded=true] span:nth-child(2){opacity:0}
+  .burger[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .top-tel{margin-left:auto;border:0;padding:0 4px 0 0}
+  .top-tel-opis{display:none}
+  .top-tel-nr{font-size:20px;color:var(--gleboki)}
+  .menu{position:fixed;left:0;right:0;top:var(--hh);background:#fff;flex-direction:column;gap:0;padding:8px 16px 20px;border-bottom:1px solid var(--linia);box-shadow:0 18px 30px rgba(10,26,46,.12);transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility 0s .2s;margin:0}
+  .menu.otw{opacity:1;visibility:visible;transform:none;transition:opacity .2s,transform .2s}
+  .menu a{font:600 24px/1.2 'Barlow Condensed',sans-serif;padding:14px 0 14px 22px;border-bottom:1px solid var(--linia)}
+  .menu a::after{left:0;top:50%;bottom:auto;margin-top:-4px;transform:none}
+  .menu a:hover::after,.menu a.akt::after{transform:none}
+
+  .hero{flex-direction:column;align-items:stretch}
+  .hero-foto{position:relative;flex:1 1 auto;width:100%;max-width:none;aspect-ratio:auto;min-height:min(46vw,30svh);z-index:0}
+  .hero-foto img{position:absolute;inset:0;object-position:18% 60%;
+    -webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 100%);mask-image:linear-gradient(180deg,#000 72%,transparent 100%)}
+  .hero::after{display:none}
+  .hero-in{width:auto;margin:0;padding:6px 16px calc(var(--k)*2 + 14px);flex:0 0 auto}
+  .hero h1{font-size:clamp(32px,min(10vw,6.2svh),52px);margin-bottom:14px}
+  .hero .lead{font-size:clamp(16px,min(4.3vw,2.7svh),19px);margin-bottom:24px}
+  .hero .btn{width:100%;justify-content:center}
+  .hero .schodek{right:16px}
+
+  .firma-in,.tabor-in,.kier-in,.kontakt-in{grid-template-columns:minmax(0,1fr)}
+  .firma-foto{order:-1;margin-left:8px}
+  .firma-foto::before{left:-8px;bottom:-8px}
+  .tabor-txt{order:-1}
+  .gal-str{opacity:1;width:42px;height:42px;margin-top:-21px}
+  .mapa{justify-self:start;max-width:300px}
+  .arkusze{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .arkusz{min-height:0;padding:20px 16px}
+  .arkusz h3{font-size:21px}
+  .arkusz-link{grid-column:1/-1}
+  .pola2{grid-template-columns:minmax(0,1fr)}
+  .form .btn{width:100%;justify-content:center}
+  .stopka{padding-bottom:96px}
+  .stopka-in{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .st-firma{grid-column:1/-1}
+  .stopka-dol{flex-direction:column;align-items:flex-start}
+
+  .mob{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--linia);transform:translateY(110%);transition:transform .25s}
+  .mob.widac{transform:none}
+  .mob a{display:flex;align-items:center;justify-content:center;height:48px;font:600 17px/1 'Barlow',sans-serif;text-decoration:none;border-radius:2px}
+  .mob-tel{background:var(--granat);color:#fff}
+  .mob-cta{background:var(--niebieski);color:#06142A}
+}
+@media (max-width:420px){
+  .kraje{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .top-tel-nr{font-size:18px}
+  .logo-txt{font-size:24px}
+}
+@media (max-width:349px){.top-tel{display:none}}
+@media (min-width:900px) and (max-height:760px){
+  .hero h1{font-size:clamp(40px,4vw,58px)}
+  .hero-in{padding:36px 0 48px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* znak Wylinki - oficjalny fragment */
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
